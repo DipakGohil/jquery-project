@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg">
+            </a>
+            <div class="d-flex">
+                <div class="btn1">
+                    <button class="btn btn-outline-danger" id="cart-icon"><i
+                            class="fa fa-lg fa-shopping-cart"></i></button>
+                </div>
+                <span class="badge badge-success mt-0 align-self-start" id="cart_item_count">0</span>
+                <div>
+                    <button class="btn btn-outline-danger"><i class="fa fa-plus"></i> Add Item</button>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="row pr-md-5 d-flex justify-content-center justify-content-md-end bg-info " >
+        <div class="col-md-6 col-lg-4 mr-lg-5 p-3 pb-4 rounded-lg bg-white ml-md-0 card pcart" id="cart">
+            <div class="row d-flex cart_menu">
+                <div class="col-md-3">
+                    <h5> Products</h5>
+                </div>
+                <div class="col-md-3 d-flex flex-wrap align-content-center">
+                    <h5> title</h5>
+                </div>
+                <div class="col-md-3 d-flex flex-wrap align-content-center">
+                    <h5> Qty</h5>
+                </div>
+                <div class="col-md-2 d-flex flex-wrap align-content-center">
+                    <h5> Price</h5>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+            <div id="order" style="overflow: auto; height: 250px;">
+
+            </div>
+            <div id="cart_footer">
+                <div id="order_btn" class="text-center text-white w-100 bg-dark p-2 font-weight bold">
+                    Order
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/pizza-3.webp" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pizza-4.jpg" class="d-block w-100" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pizz-recipe-1.jpg" class="d-block w-100" alt="...">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid about">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title">
+                    <h3> visit dimo's cafe!</h3>
+                </div>
+                <p>
+                    Our first full service Dimo's Café, located in Lincoln Square, is open! Visit us at 4647 N Lincoln
+                    Ave any day of the week.
+                    <br> <br>
+                    You'll experience a warm and welcoming dining room, a full bar, and a locally-oriented retail space
+                    inside. Bring yourself, a date, your friends or your family and enjoy flavorful dishes, handcrafted
+                    cocktails, and excellent vibes all day long. We can't wait to serve you!
+                </p>
+                <a href="https://goo.gl/maps/j6wv1wSvJBmZRzmGA" target="_blank">
+                    <button class="btn btn-outline-danger"> Find Us here!</button>
+                </a>
+            </div>
+            <img src="images/Café_1.jpg" class="img-circle col-md-6" alt="..." />
+        </div>
+    </div>
+
+    <section class="products" id="products">
+        <div class="swiper product-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box" id="box">
+                    <img src="images/Elote_1.jpg" alt="">
+                    <h3>Elote</h3>
+                    <div class="price"> 17$ </div>
+                    <button class="btn btn-outline-danger order_btn" id="order_btn">Add to Cart</button>
+                </div>
+
+                <div class="swiper-slide box" id="box">
+                    <img src="images/Elote_2.jpg" alt="">
+                    <h3>vegan elote</h3>
+                    <div class="price"> 18$ </div>
+
+                    <button class="btn btn-outline-danger order_btn" id="order_btn">Add to Cart</button>
+                </div>
+
+                <div class="swiper-slide box" id="box">
+                    <img src="images/Cheese.jpg" alt="">
+                    <h3>cheese</h3>
+                    <div class="price">  13$ </div>
+
+                    <button class="btn btn-outline-danger order_btn" id="order_btn">Add
+                        to Cart</button>
+                </div>
+
+                <div class="swiper-slide box" id="box">
+                    <img src="images/Margherita.jpg" alt="">
+                    <h3>Margherita</h3>
+                    <div class="price">  15$ </div>
+
+                    <button class="btn btn-outline-danger order_btn" id="order_btn">Add to Cart</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo">
+                    <a href="index.html"><img src="images/Pie.svg"></a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="icons">
+                    <a href="https://www.facebook.com/dimospizza"> <i class="fa fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/dimospizza"> <i class="fa fa-brands fa-twitter"></i></a>
+                    <a href="http://instagram.com/dimospizza"> <i class="fa fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    
+   <script src="cart-localstorage.min.js"></script>
+
+</body>
+
+</html>

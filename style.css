@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: sans-serif, 'Poppins'; 
+    margin: 0%;
+    padding: 0%;
+}
+
+.btn{
+    border-color: black;
+    color: black;
+}
+
+.btn:hover{
+    border-color: white;
+    color: white;
+}
+.btn1 {
+    margin-right: 7px;
+}
+
+.carousel-item {
+    height: 550px;
+}
+
+.about {
+    margin-top: 60px;
+}
+
+.title {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: url(images/red.png);
+    background-position: top;
+    margin-top: 70px;
+    margin-left: 140px;
+    width: 130%;
+}
+
+.title h3{
+    font-size: 79px;
+    text-transform: uppercase;
+    font-family: 'Vina Sans', cursive;
+}
+
+.about p{
+    margin-left: 100px;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+
+.about button{
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+.about img{
+    transform: rotate(-2deg);
+    max-width: 450px;
+    margin-left: 100px;
+}
+
+.products .product-slider{
+    padding:1rem;
+}
+
+.products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+
+.products .product-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+
+.products .product-slider .box img{
+    height:20rem;
+}
+
+.products .product-slider .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.products .product-slider .box .price{
+    font-size: 2rem;
+    color:var(--light-color);
+    padding:.5rem 0;
+}
+
+.products h3{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.footer{
+    background-color: red;
+    height: 100px;
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.icons{
+    font-size: 2rem;
+    float: right;
+    margin-right: 50px;
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+}
+
+.icons a{
+    color: #fff;
+}
+
+.icons a:hover{
+    color: black;
+}
+
+.card{
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    overflow: auto;
+}
+
+.badge{
+    margin-left: -25px;
+    margin-top: -5px;
+}
+
+.cart_menu{
+    margin-left: 19px;
+}
+
+
+
+
+
+
